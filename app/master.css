@@ -19,3 +19,8 @@ nav ul li a{
 .sidenav-trigger i{
 	color: #b71c1c;
 }
+
+.navbar-fixed nav{
+	position: fixed;
+	
+}
