@@ -1,3 +1,13 @@
+body {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+
+main {
+	flex: 1 0 auto;
+}
+
 .sidenav{
 	width: 200px;
 }
@@ -7,20 +17,22 @@
 	font-weight: 1;
 }
 
-nav ul li a{
-  color: #b71c1c;
-} 
-
-
 .dropdown-content li>a, .dropdown-content li>span{
-	color: #b71c1c;
+	color: #cab22a;
 }
 
 .sidenav-trigger i{
-	color: #b71c1c;
+	color: #cab22a;
 }
 
-.navbar-fixed nav{
-	position: fixed;
-	
+.slogan{
+  font-size: 30px;
+}
+
+.mainColor {
+	background-color: #0c0b37;
+}
+
+.navText {
+	color: #cab22a;
 }
