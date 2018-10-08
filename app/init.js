@@ -1,17 +1,16 @@
 $(function(){
-    $('.sidenav').sidenav();
+  $('.sidenav').sidenav();
 
-    $(".nav").dropdown({
-		hover: true,
-		coverTrigger: false
+  $(".nav").dropdown({
+    hover: true,
+    coverTrigger: false
+  });
 
-	});
+  $('.collapsible').collapsible();
 
-    $('.collapsible').collapsible();
+  $('.parallax').parallax();
 
-    $('.parallax').parallax();
-
-    $('.carousel.carousel-slider').carousel({
+  $('.carousel.carousel-slider').carousel({
     fullWidth: true,
     indicators: true
   });
@@ -21,4 +20,6 @@ $(function(){
     setTimeout(autoplay, 5000);
   }
   setTimeout(autoplay, 5000);
-  });
+
+  $('.materialboxed').materialbox();
+});

@@ -36,3 +36,7 @@ main {
 .navText {
 	color: #cab22a;
 }
+
+nav, nav .nav-wrapper i {
+	margin-left: 0px;
+}
