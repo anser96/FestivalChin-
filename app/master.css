@@ -18,11 +18,11 @@ main {
 }
 
 .dropdown-content li>a, .dropdown-content li>span{
-	color: #cab22a;
+	color: white;
 }
 
 .sidenav-trigger i{
-	color: #cab22a;
+	color: white;
 }
 
 .slogan{
@@ -30,13 +30,18 @@ main {
 }
 
 .mainColor {
-	background-color: #0c0b37;
+	background-color: #00838f ;
 }
 
 .navText {
-	color: #cab22a;
+	color: white;
 }
 
 nav, nav .nav-wrapper i {
 	margin-left: 0px;
+}
+
+.brand-logo img {
+	width: 140px;
+	margin-left: 10px;
 }
