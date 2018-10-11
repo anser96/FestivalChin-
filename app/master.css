@@ -6,6 +6,11 @@ body {
 
 main {
 	flex: 1 0 auto;
+
+}
+.main{
+	width: 450px;
+	margin: 30px;
 }
 
 .sidenav{
