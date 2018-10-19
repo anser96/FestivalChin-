@@ -1,4 +1,4 @@
-body {
+/* body {
 	display: flex;
 	min-height: 100vh;
 	flex-direction: column;
@@ -6,16 +6,12 @@ body {
 
 main {
 	flex: 1 0 auto;
+} */
 
-}
-.main{
+/* .main{
 	width: 450px;
 	margin: 30px;
-}
-
-.sidenav{
-	width: 200px;
-}
+} */
 
 .sidenav li>a{
 	padding: 0 15px;
@@ -34,7 +30,7 @@ main {
   font-size: 30px;
 }
 
-.mainColor {
+.green-fest {
 	background-color: #00838f ;
 }
 
@@ -51,11 +47,30 @@ nav, nav .nav-wrapper i {
 	margin-left: 10px;
 }
 
-.inscri{
-	background-color: #f8c35b;
+.yellow-fest {
+	background-color: #f8c35b !important;
 }
 
 .fb-page{
 	width: 430px;
 	height: 430px;
+}
+
+.dropdown-content li:hover {
+   background-color: rgba(0,0,0,0);
+}
+
+/* .carousel.carousel-slider {
+	height: 300px;
+} */
+
+.col.grid-example {
+    border: 1px solid #eee;
+    margin: 7px 0;
+    text-align: center;
+    line-height: 50px;
+    font-size: 28px;
+    background-color: tomato;
+    color: white;
+    padding: 0;
 }
