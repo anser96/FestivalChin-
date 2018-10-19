@@ -22,4 +22,8 @@ $(function(){
   setTimeout(autoplay, 5000);
 
   $('.materialboxed').materialbox();
+
+  $('.modal').modal({
+    dismissible: false
+  });
 });
