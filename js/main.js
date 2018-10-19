@@ -10,10 +10,7 @@ $(function(){
 
   $('.parallax').parallax();
 
-  $('.carousel.carousel-slider').carousel({
-    // fullWidth: true,
-    indicators: true
-  });
+  $('.carousel.carousel-slider').carousel();
 
   function autoplay() {
     $('.carousel').carousel('next');
