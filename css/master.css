@@ -1,0 +1,76 @@
+/* body {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+
+main {
+	flex: 1 0 auto;
+} */
+
+/* .main{
+	width: 450px;
+	margin: 30px;
+} */
+
+.sidenav li>a{
+	padding: 0 15px;
+	font-weight: 1;
+}
+
+.dropdown-content li>a, .dropdown-content li>span{
+	color: white;
+}
+
+.sidenav-trigger i{
+	color: white;
+}
+
+.slogan{
+  font-size: 30px;
+}
+
+.green-fest {
+	background-color: #00838f ;
+}
+
+.navText {
+	color: white;
+}
+
+nav, nav .nav-wrapper i {
+	margin-left: 0px;
+}
+
+.brand-logo img {
+	width: 140px;
+	margin-left: 10px;
+}
+
+.yellow-fest {
+	background-color: #f8c35b !important;
+}
+
+.fb-page{
+	width: 430px;
+	height: 430px;
+}
+
+.dropdown-content li:hover {
+   background-color: rgba(0,0,0,0);
+}
+
+/* .carousel.carousel-slider {
+	height: 300px;
+} */
+
+.col.grid-example {
+    border: 1px solid #eee;
+    margin: 7px 0;
+    text-align: center;
+    line-height: 50px;
+    font-size: 28px;
+    background-color: tomato;
+    color: white;
+    padding: 0;
+}
