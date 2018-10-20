@@ -44,3 +44,23 @@ nav, nav .nav-wrapper i {
 .dropdown-content li:hover {
    background-color: rgba(0,0,0,0);
 }
+
+.programacion {
+	height: auto;
+	margin-top: 20px;
+	display: block;
+	width: 400px;
+	margin-right: auto;
+	margin-left: auto;
+	max-width: 100%;
+}
+
+.premios {
+	height: auto;
+	margin-top: 20px;
+	display: block;
+	width: 400px;
+	margin-right: auto;
+	margin-left: auto;
+	max-width: 100%;	
+}
