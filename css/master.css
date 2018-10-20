@@ -65,6 +65,16 @@ nav, nav .nav-wrapper i {
 	max-width: 100%;	
 }
 
+.contacto{
+	height: auto;
+	margin-top: 20px;
+	display: block;
+	width: 400px;
+	margin-right: auto;
+	margin-left: auto;
+	max-width: 100%;
+}
+
 .carousel-item {
 	height: 100px !important;
 	min-height: 300px;
