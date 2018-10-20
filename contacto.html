@@ -26,7 +26,7 @@
 					<li><a class="navText" href="#!">Noticias</a></li>
 					<li><a class="navText" href="#!">Galería</a></li>
 					<li><a class="nav navText" href="#!" data-target="dropdown1">Quienes Somos<i class="material-icons right">arrow_drop_down</i></a></li>
-					<li><a class="navText" href="./contacto.html">Contacto</a></li>
+					<li><a class="navText" href="#!">Contacto</a></li>
 					<li><a class="waves-effect waves-light btn-large yellow-fest" href="./inscripcion.html">Inscríbete</a></li>
 				</ul>
 			</div>
@@ -91,101 +91,42 @@
 	</ul>
 
 	<!-- Content -->
-	<!-- Carousel -->
-	<div class="carousel carousel-slider">
-		<div class="carousel-fixed-item">
-		</div>
-		<div class="carousel-item carousel" href="#one!">
-			<img src="./img/chinu9r.jpg" alt="">
-		</div>
-		<div class="carousel-item carousel2" href="#one!">
-			<img src="./img/chinu2r.jpg" alt="">
-		</div>
-		<div class="carousel-item carousel3" href="#one!">
-			<img src="./img/chinu1r.JPG" alt="">
-		</div>
-</div>
+
 
 
 	<div class="row">
 		<main class="col s12 m8 l9">
 			
-			<div class="row">
-				<div class="col l4 m4 s12">
-					<div class="card hoverable">
-						<div class="card-image">
-							<img src="./img/noticia1.jpeg">
-							<span class="card-title">Titular</span>
-						</div>
-					</div>
-				</div>
-				<div class="col l4 m4 s12">
-					<div class="card hoverable">
-						<div class="card-image">
-							<img src="./img/noticia2.jpeg">
-							<span class="card-title">Titular</span>
-						</div>
-					</div>
-				</div>
-				<div class="col l4 m4 s12">
-					<div class="card hoverable">
-						<div class="card-image">
-							<img src="./img/noticia3.jpeg">
-							<span class="card-title">Titular</span>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="center">
-					<a class="waves-effect waves-light btn-large white grey-text">mas noticias</a>
-				</div>
-			</div>
+        <form action="http://www.festivaldechinu.com/cgi-sys/formmail.pl" method="POST"> 
+            <input type="hidden" name="recipient" value="info@festivaldechinu.com"/>
 
-			<div class="divider"></div>
+            <input type="hidden" name="subject" value="Contacto"/>
+            <input type="hidden" name="redirect" value="http://www.festivaldechinu.com"/>
+            <div class="container">
+                <div class="row">
+                    <div class="col s6">
+                        <input type="text" name="nombre" size="40" value="" placeholder="Nombre">
+                    </div>
+                    <div class="col s6">
+                        <input type="text" name="email" size="40" value="" placeholder="Correo">
 
-			<h4 class="center">Galería</h4>
-			<div class="row">
-				<div class="col l4 m4 s12">
-					<div class="row">
-						<div class="col">
-							<div class="card hoverable">
-								<div class="card-image">
-									<img class="materialboxed" width="" src="./img/paralax6.jpeg">
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col">
-							<div class="card hoverable">
-								<div class="card-image">
-									<img class="materialboxed" width="" src="./img/noticia4.jpeg">
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col l4 m4 s12">
-					<div class="card hoverable">
-						<div class="card-image">
-							<img class="materialboxed" width="" src="./img/sample-1.jpg">
-						</div>
-					</div>
-				</div>
-				<div class="col l4 m4 s12">
-					<div class="card hoverable">
-						<div class="card-image">
-							<img class="materialboxed" width="230" src="./img/sample-1.jpg">
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="center">
-					<a class="waves-effect waves-light btn-large white grey-text">ver mas</a>
-				</div>
-			</div>
+                    </div>
+                    <div class="col s12">
+                        <textarea name="mensagem" ></textarea>
+                    </div>
+                    <div class="col s1">
+                        <button class="hoverable btn" type="submit" name="Submit">Enviar</button>
+                        
+                    </div>
+                </div>
+            </div>
+            
+            
+
+        </form>
+
+			
+			
 		</main>
 
 		<aside class="section">
