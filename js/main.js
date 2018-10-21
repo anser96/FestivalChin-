@@ -12,11 +12,10 @@ $(function(){
 
   $('.carousel.carousel-slider').carousel();
 
-  function autoplay() {
-    $('.carousel').carousel('next');
-    setTimeout(autoplay, 5000);
-  }
-  setTimeout(autoplay, 5000);
+ setInterval(function(){
+  $('.carousel').carousel('next');
+ }, 4000);
+  
 
   $('.materialboxed').materialbox();
 
