@@ -75,3 +75,43 @@ nav, nav .nav-wrapper i {
 	max-width: 100%;
 }
 
+element.style {
+    width: 100%;
+    
+}
+
+.card .noticia img {
+    display: block;
+    border-radius: 2px 2px 0 0;
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+	width: 100%;
+	height: 235px;
+}
+
+.card .noticia-slider img {
+    display: block;
+    border-radius: 2px 2px 0 0;
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+	width: 100%;
+	height: 435px;
+}
+/* .card{
+	
+	height: 450px;
+} */
+
+.card .card-action {
+    background-color: inherit;
+    border-top: 1px solid rgba(160,160,160,0.2);
+    position: relative;
+	padding: 16px 24px;
+	height: 50px;
+}
