@@ -109,7 +109,7 @@
 									<div>Enviar formulario<a href="#modal-enviar" class="secondary-content modal-trigger"><i class="material-icons">send</i></a></div>
 								</li>
 								<li class="collection-item">
-									<div>Inscripción online(Pronto)<a href="#!" class="secondary-content"><i class="material-icons">assignment</i></a></div>
+									<div>Inscripción online(Pronto)<a href="#infantil" class="secondary-content modal-trigger"><i class="material-icons">assignment</i></a></div>
 								</li>
 							</ul>
 						</div>
@@ -128,7 +128,7 @@
 									<div>Enviar formulario<a href="#modal-enviar" class="secondary-content modal-trigger"><i class="material-icons">send</i></a></div>
 								</li>
 								<li class="collection-item">
-									<div>Inscripción online(Pronto)<a href="#!" class="secondary-content"><i class="material-icons">assignment</i></a></div>
+									<div>Inscripción online(Pronto)<a href="#aficionado" class="secondary-content modal-trigger"><i class="material-icons">assignment</i></a></div>
 								</li>
 							</ul>
 						</div>
@@ -146,7 +146,7 @@
 									<div>Enviar formulario<a href="#modal-enviar" class="secondary-content modal-trigger"><i class="material-icons">send</i></a></div>
 								</li>
 								<li class="collection-item">
-									<div>Inscripción online(Pronto)<a href="#!" class="secondary-content"><i class="material-icons">assignment</i></a></div>
+									<div>Inscripción online(Pronto)<a href="#inedita" class="secondary-content modal-trigger"><i class="material-icons">assignment</i></a></div>
 								</li>
 							</ul>
 						</div>
@@ -165,7 +165,7 @@
 									<div>Enviar formulario<a href="#modal-enviar" class="secondary-content modal-trigger"><i class="material-icons">send</i></a></div>
 								</li>
 								<li class="collection-item">
-									<div>Inscripción online(Pronto)<a href="#!" class="secondary-content"><i class="material-icons">assignment</i></a></div>
+									<div>Inscripción online(Pronto)<a href="#profesional" class="secondary-content modal-trigger"><i class="material-icons">assignment</i></a></div>
 								</li>
 							</ul>
 						</div>
@@ -178,6 +178,573 @@
 					<h4>Enviar Formulario</h4>
 					<form name="fileForm" id="fileForm" enctype="multipart/form-data" method="post" action="enviarInscripcion.php"
 					 target='_self'>
+						<div class="file-field input-field">
+							<div class="btn">
+								<span>Archivo</span>
+								<input type="file" name="archivo" id="archivo">
+							</div>
+							<div class="file-path-wrapper">
+								<input class="file-path validate" type="text" id="filePath">
+							</div>
+							<span id="helper-text" class="helper-text center">Abjunta tu formulario de inscripción</span>
+							<div class="progress" style="display: none;">
+								<div class="indeterminate"></div>
+							</div>
+						</div>
+						<div class="center">
+							<button class="btn waves-effect waves-light" type="submit" name="sendFile" id="sendFile">Enviar
+								<i class="material-icons right">send</i>
+							</button>
+							<!-- <input type='submit' value='Enviar' class="btn waves-effect waves-light"> -->
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<a href="#!" class="modal-close waves-effect btn-flat">Cerrar</a>
+					<!-- <a href="#!" id="sendFile" class="waves-effect btn-flat">Enviar</a> -->
+				</div>
+			</div>
+			<!-- Modal Structure Aficionado -->
+			<div id="aficionado" class="modal">
+				<div class="modal-content">
+					<h4>Enviar Formulario</h4>
+					<form name="formaficionado" id="formaficionado" enctype="multipart/form-data" method="post" action="enviarInscripcion.php"
+					 target='_self'>
+						<div class="row">
+							<div class="col s12 m12 l12">
+								<label for="">
+									<input type="text" name="nombre" placeholder="Nombre Completo">
+								</label>
+							</div>
+							<div class="col s12 m6 l6">
+								<label for="">
+									<input type="text" name="documento" placeholder="Documento">
+								</label>
+							</div>
+							<div class="col s12 m6 l6">
+								<label for="">
+									<input type="number" name="edad" placeholder="Edad">
+								</label>
+							</div>
+							<div class="col s12 m6 l6">
+								<label for="">
+									<input type="text" name="direccion" placeholder="Direccion">
+								</label>
+							</div>
+							<div class="col s12 m6 l6">
+								<label for="">
+									<input type="text" name="barrio" placeholder="Barrio">
+								</label>
+							</div>
+							<div class="col s12 m6 l6">
+								<label for="">
+									<input type="number" name="telefono" placeholder="Telefono">
+								</label>
+							</div>
+							<div class="col s12 m6 l6">
+								<label for="">
+									<input type="number" name="celular" placeholder="Celular">
+								</label>
+							</div>
+							<div class="col s12 m6 l6">
+								<label for="">
+									<input type="text" name="municipio" placeholder="Municipio">
+								</label>
+							</div>
+							<div class="col s12 m6 l6">
+								<label for="">
+									<input type="text" name="departamento" placeholder="Departamento">
+								</label>
+							</div>
+							<div class="col s12 m12 l12">
+								<label for="">
+									<input type="email" name="email" placeholder="Correo Electónico">
+								</label>
+							</div>
+							<div class="col s12 m12 l12">
+								<label for="">
+									<input type="text" name="lugar y fecha nacimiento" placeholder="Lugar y Fecha nacimiento">
+								</label>
+							</div>
+							
+
+							<h5>Datos de los acompañantes</h5>
+							<h6>Cajero</h6>
+							<div class="col s12 l4 m4">
+
+								<label for="">
+									<input type="text" name="nombre cajero" placeholder="Nombre">
+								</label>
+							</div>
+							<div class="col s12 l4 m4">
+
+								<label for="">
+									<input type="text" name="Documento Cajero" placeholder="Documento">
+								</label>
+							</div>
+							<div class="col s12 l4 m4">
+
+								<label for="">
+									<input type="text" name="celular cajero" placeholder="Celular">
+								</label>
+							</div>
+							<h6>Guacharaquero</h6>
+							<div class="col s12 l4 m4">
+
+								<label for="">
+									<input type="text" name="nombre Guacharaquero" placeholder="Nombre">
+								</label>
+							</div>
+							<div class="col s12 l4 m4">
+
+								<label for="">
+									<input type="text" name="Documento Guacharaquero" placeholder="Documento">
+								</label>
+							</div>
+							<div class="col s12 l4 m4">
+
+								<label for="">
+									<input type="text" name="celular Guacharaquero" placeholder="Celular">
+								</label>
+							</div>
+							<h6>Cantante(opcional)</h6>
+							<div class="col s12 l4 m4">
+
+								<label for="">
+									<input type="text" name="nombre Cantante" placeholder="Nombre">
+								</label>
+							</div>
+							<div class="col s12 l4 m4">
+
+								<label for="">
+									<input type="text" name="Documento Cantante" placeholder="Documento">
+								</label>
+							</div>
+							<div class="col s12 l4 m4">
+
+								<label for="">
+									<input type="text" name="celular Cantante" placeholder="Celular">
+								</label>
+							</div>
+
+
+						</div>
+
+						<div class="file-field input-field">
+							<div class="btn">
+								<span>Archivo</span>
+								<input type="file" name="archivo" id="archivo">
+							</div>
+							<div class="file-path-wrapper">
+								<input class="file-path validate" type="text" id="filePath">
+							</div>
+							<span id="helper-text" class="helper-text center">Abjunta tu formulario de inscripción</span>
+							<div class="progress" style="display: none;">
+								<div class="indeterminate"></div>
+							</div>
+						</div>
+						<div class="center">
+							<button class="btn waves-effect waves-light" type="submit" name="sendFile" id="sendFile">Enviar
+								<i class="material-icons right">send</i>
+							</button>
+							<!-- <input type='submit' value='Enviar' class="btn waves-effect waves-light"> -->
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<a href="#!" class="modal-close waves-effect btn-flat">Cerrar</a>
+					<!-- <a href="#!" id="sendFile" class="waves-effect btn-flat">Enviar</a> -->
+				</div>
+			</div>
+			<!-- Modal Structure Infantil -->
+			<div id="infantil" class="modal">
+				<div class="modal-content">
+					<h4>Enviar Formulario</h4>
+					<form name="fileForm" id="fileForm" enctype="multipart/form-data" method="post" action="enviarInscripcion.php"
+					 target='_self'>
+						<div class="row">
+							<div class="col s12 m12 l12">
+								<label for="">
+									<input type="text" name="nombre" placeholder="Nombre Completo">
+								</label>
+							</div>
+							<div class="col s12 m6 l6">
+								<label for="">
+									<input type="text" name="documento" placeholder="Documento">
+								</label>
+							</div>
+							<div class="col s12 m6 l6">
+								<label for="">
+									<input type="number" name="edad" placeholder="Edad">
+								</label>
+							</div>
+							<div class="col s12 m6 l6">
+								<label for="">
+									<input type="text" name="direccion" placeholder="Direccion">
+								</label>
+							</div>
+							<div class="col s12 m6 l6">
+								<label for="">
+									<input type="text" name="barrio" placeholder="Barrio">
+								</label>
+							</div>
+							<div class="col s12 m6 l6">
+								<label for="">
+									<input type="number" name="telefono" placeholder="Telefono">
+								</label>
+							</div>
+							<div class="col s12 m6 l6">
+								<label for="">
+									<input type="number" name="celular" placeholder="Celular">
+								</label>
+							</div>
+							<div class="col s12 m6 l6">
+								<label for="">
+									<input type="text" name="municipio" placeholder="Municipio">
+								</label>
+							</div>
+							<div class="col s12 m6 l6">
+								<label for="">
+									<input type="text" name="departamento" placeholder="Departamento">
+								</label>
+							</div>
+							<div class="col s12 m12 l12">
+								<label for="">
+									<input type="email" name="email" placeholder="Correo Electónico">
+								</label>
+							</div>
+							<div class="col s12 m6 l6">
+								<label for="">
+									<input type="text" name="lugar y fecha nacimiento" placeholder="Lugar y Fecha nacimiento">
+								</label>
+							</div>
+							<div class="col s12 m6 l6">
+								<label for="">
+									<input type="text" name="No. SERIAL R. CIVIL" placeholder="No. SERIAL R. CIVIL">
+								</label>
+							</div>
+
+							<h5>Datos de los acompañantes</h5>
+							<h6>Cajero</h6>
+							<div class="col s12 l4 m4">
+
+								<label for="">
+									<input type="text" name="nombre cajero" placeholder="Nombre">
+								</label>
+							</div>
+							<div class="col s12 l4 m4">
+
+								<label for="">
+									<input type="text" name="Documento Cajero" placeholder="Documento">
+								</label>
+							</div>
+							<div class="col s12 l4 m4">
+
+								<label for="">
+									<input type="text" name="celular cajero" placeholder="Celular">
+								</label>
+							</div>
+							<h6>Guacharaquero</h6>
+							<div class="col s12 l4 m4">
+
+								<label for="">
+									<input type="text" name="nombre Guacharaquero" placeholder="Nombre">
+								</label>
+							</div>
+							<div class="col s12 l4 m4">
+
+								<label for="">
+									<input type="text" name="Documento Guacharaquero" placeholder="Documento">
+								</label>
+							</div>
+							<div class="col s12 l4 m4">
+
+								<label for="">
+									<input type="text" name="celular Guacharaquero" placeholder="Celular">
+								</label>
+							</div>
+							<h6>Cantante</h6>
+							<div class="col s12 l4 m4">
+
+								<label for="">
+									<input type="text" name="nombre Cantante" placeholder="Nombre">
+								</label>
+							</div>
+							<div class="col s12 l4 m4">
+
+								<label for="">
+									<input type="text" name="Documento Cantante" placeholder="Documento">
+								</label>
+							</div>
+							<div class="col s12 l4 m4">
+
+								<label for="">
+									<input type="text" name="celular Cantante" placeholder="Celular">
+								</label>
+							</div>
+							<h5>Datos Familiares</h5>
+							<div class="col s12 l6 m6">
+
+								<label for="">
+									<input type="text" name="Nombre del padre" placeholder="Nombre del Padre">
+								</label>
+							</div>
+							<div class="col s12 l6 m6">
+
+								<label for="">
+									<input type="text" name="Nombre de la madre" placeholder="Nombre de la Madre">
+								</label>
+							</div>
+
+						</div>
+
+						<div class="file-field input-field">
+							<div class="btn">
+								<span>Archivo</span>
+								<input type="file" name="archivo" id="archivo">
+							</div>
+							<div class="file-path-wrapper">
+								<input class="file-path validate" type="text" id="filePath">
+							</div>
+							<span id="helper-text" class="helper-text center">Abjunta tu formulario de inscripción</span>
+							<div class="progress" style="display: none;">
+								<div class="indeterminate"></div>
+							</div>
+						</div>
+						<div class="center">
+							<button class="btn waves-effect waves-light" type="submit" name="sendFile" id="sendFile">Enviar
+								<i class="material-icons right">send</i>
+							</button>
+							<!-- <input type='submit' value='Enviar' class="btn waves-effect waves-light"> -->
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<a href="#!" class="modal-close waves-effect btn-flat">Cerrar</a>
+					<!-- <a href="#!" id="sendFile" class="waves-effect btn-flat">Enviar</a> -->
+				</div>
+			</div>
+			<!-- Modal Structure Cancion Inedita -->
+			<div id="inedita" class="modal">
+				<div class="modal-content">
+					<h4>Enviar Formulario</h4>
+					<form name="formInedita" id="formInedita" enctype="multipart/form-data" method="post" action="enviarInscripcion.php"
+					 target='_self'>
+						<div class="row">
+							<h6>Datos de la Cancion</h6>
+							<div class="col s12 m6 l6">
+								<label for="">
+									<input type="text" name="Ritmo" placeholder="Ritmo">
+								</label>
+							</div>
+							<div class="col s12 m3 l3">
+								<input type="text" name="Letra" placeholder="Letra">
+							</div>
+							<div class="col s12 m3 l3">
+								<input type="text" name="Musica" placeholder="Música">
+							</div>
+							<div class="col s12 m12 l12">
+								<input type="text" name="nombre cacion" placeholder="Nombre de La Canción">
+							</div>
+							<h6>Datos Personales</h6>
+							<div class="col s12 m12 l12">
+								<label for="">
+									<input type="text" name="nombre" placeholder="Nombre Completo">
+								</label>
+							</div>
+							<div class="col s12 m6 l6">
+								<label for="">
+									<input type="text" name="documento" placeholder="Documento">
+								</label>
+							</div>
+							<div class="col s12 m6 l6">
+								<label for="">
+									<input type="number" name="edad" placeholder="Edad">
+								</label>
+							</div>
+							<div class="col s12 m6 l6">
+								<label for="">
+									<input type="text" name="direccion" placeholder="Direccion">
+								</label>
+							</div>
+							<div class="col s12 m6 l6">
+								<label for="">
+									<input type="text" name="barrio" placeholder="Barrio">
+								</label>
+							</div>
+							<div class="col s12 m6 l6">
+								<label for="">
+									<input type="number" name="telefono" placeholder="Telefono">
+								</label>
+							</div>
+							<div class="col s12 m6 l6">
+								<label for="">
+									<input type="number" name="celular" placeholder="Celular">
+								</label>
+							</div>
+							<div class="col s12 m6 l6">
+								<label for="">
+									<input type="text" name="municipio" placeholder="Municipio">
+								</label>
+							</div>
+							<div class="col s12 m6 l6">
+								<label for="">
+									<input type="text" name="departamento" placeholder="Departamento">
+								</label>
+							</div>
+							<div class="col s12 m12 l12">
+								<label for="">
+									<input type="email" name="email" placeholder="Correo Electónico">
+								</label>
+							</div>
+							<div class="col s12 m6 l6">
+								<label for="">
+									<input type="text" name="lugar nacimiento" placeholder="Lugar de nacimiento">
+								</label>
+							</div>
+							<div class="col s12 m6 l6">
+								<label for="">
+									<input type="Date" name="Fecha Nacimiento" placeholder="Lugar de Naciemiento">
+								</label>
+							</div>
+
+
+						</div>
+
+						<div class="file-field input-field">
+							<div class="btn">
+								<span>Archivo</span>
+								<input type="file" name="archivo" id="archivo">
+							</div>
+							<div class="file-path-wrapper">
+								<input class="file-path validate" type="text" id="filePath">
+							</div>
+							<span id="helper-text" class="helper-text center">Abjunta tu formulario de inscripción</span>
+							<div class="progress" style="display: none;">
+								<div class="indeterminate"></div>
+							</div>
+						</div>
+						<div class="center">
+							<button class="btn waves-effect waves-light" type="submit" name="sendFile" id="sendFile">Enviar
+								<i class="material-icons right">send</i>
+							</button>
+							<!-- <input type='submit' value='Enviar' class="btn waves-effect waves-light"> -->
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<a href="#!" class="modal-close waves-effect btn-flat">Cerrar</a>
+					<!-- <a href="#!" id="sendFile" class="waves-effect btn-flat">Enviar</a> -->
+				</div>
+			</div>
+			<!-- Modal Structure Profesional -->
+			<div id="profesional" class="modal">
+				<div class="modal-content">
+					<h4>Enviar Formulario</h4>
+					<form name="formprofesional" id="formprofesional" enctype="multipart/form-data" method="post" action="enviarInscripcion.php"
+					 target='_self'>
+						<div class="row">
+							<div class="col s12 m12 l12">
+								<label for="">
+									<input type="text" name="nombre" placeholder="Nombre Completo">
+								</label>
+							</div>
+							<div class="col s12 m6 l6">
+								<label for="">
+									<input type="text" name="documento" placeholder="Documento">
+								</label>
+							</div>
+							<div class="col s12 m6 l6">
+								<label for="">
+									<input type="number" name="edad" placeholder="Edad">
+								</label>
+							</div>
+							<div class="col s12 m6 l6">
+								<label for="">
+									<input type="text" name="direccion" placeholder="Direccion">
+								</label>
+							</div>
+							<div class="col s12 m6 l6">
+								<label for="">
+									<input type="text" name="barrio" placeholder="Barrio">
+								</label>
+							</div>
+							<div class="col s12 m6 l6">
+								<label for="">
+									<input type="number" name="telefono" placeholder="Telefono">
+								</label>
+							</div>
+							<div class="col s12 m6 l6">
+								<label for="">
+									<input type="number" name="celular" placeholder="Celular">
+								</label>
+							</div>
+							<div class="col s12 m6 l6">
+								<label for="">
+									<input type="text" name="municipio" placeholder="Municipio">
+								</label>
+							</div>
+							<div class="col s12 m6 l6">
+								<label for="">
+									<input type="text" name="departamento" placeholder="Departamento">
+								</label>
+							</div>
+							<div class="col s12 m12 l12">
+								<label for="">
+									<input type="email" name="email" placeholder="Correo Electónico">
+								</label>
+							</div>
+							<div class="col s12 m12 l12">
+								<label for="">
+									<input type="text" name="lugar y fecha nacimiento" placeholder="Lugar y Fecha nacimiento">
+								</label>
+							</div>
+
+
+							<h5>Datos de los acompañantes</h5>
+							<h6>Cajero</h6>
+							<div class="col s12 l4 m4">
+
+								<label for="">
+									<input type="text" name="nombre cajero" placeholder="Nombre">
+								</label>
+							</div>
+							<div class="col s12 l4 m4">
+
+								<label for="">
+									<input type="text" name="Documento Cajero" placeholder="Documento">
+								</label>
+							</div>
+							<div class="col s12 l4 m4">
+
+								<label for="">
+									<input type="text" name="celular cajero" placeholder="Celular">
+								</label>
+							</div>
+							<h6>Guacharaquero</h6>
+							<div class="col s12 l4 m4">
+
+								<label for="">
+									<input type="text" name="nombre Guacharaquero" placeholder="Nombre">
+								</label>
+							</div>
+							<div class="col s12 l4 m4">
+
+								<label for="">
+									<input type="text" name="Documento Guacharaquero" placeholder="Documento">
+								</label>
+							</div>
+							<div class="col s12 l4 m4">
+
+								<label for="">
+									<input type="text" name="celular Guacharaquero" placeholder="Celular">
+								</label>
+							</div>
+							
+
+
+						</div>
+
 						<div class="file-field input-field">
 							<div class="btn">
 								<span>Archivo</span>
