@@ -2,6 +2,24 @@
 <html lang="es">
 
 <head>
+<?PHP
+$host = "localhost"; 	//TU HOST//
+$dbuser = "root";	 	//TU USUARIO DEL HOST//
+	//TU CONTRASEÑA//
+$db = "noticiasnews";		//TU BASE DE DATOS//
+$connect = mysqli_connect ($host, $dbuser, '');
+if(!$connect)
+echo ("No se pudo conectar a la base de datos");
+else
+$select = mysqli_select_db($connect,$db);
+?>
+
+<?
+$consulta = "SELECT * FROM noticias";
+#$consulta2 = "SELECT * FROM noticias WHERE id='$_POST[id]'";
+#$resultado2 = mysqli_query( $connect, $consulta2) or die ("la consulta no sirve joder");
+$resultado = mysqli_query( $connect, $consulta ) or die ( "Algo ha ido mal en la consulta a la base de datos");
+?>
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="icon" type="image/png" href="./img/favicon.ico" />
@@ -18,14 +36,14 @@
                 <a href="#" class="sidenav-trigger" data-target="mobile-nav">
                     <i class="material-icons">menu</i>
                 </a>
-                <a href="./index.p" class="brand-logo"> <img src="./img/logo.png" alt=""> </a>
+                <a href="./index.php" class="brand-logo"> <img src="./img/logo.png" alt=""> </a>
                 <ul class="right hide-on-med-and-down">
                     <li><a class="nav navText" href="#!" data-target="dropdown1">Quienes Somos<i class="material-icons right">arrow_drop_down</i></a></li>
                     <li><a class="nav navText" href="#!" data-target="dropdown2">Reseña Histórica<i class="material-icons right">arrow_drop_down</i></a></li>
                     <li><a class="nav navText" href="#!" data-target="dropdown3">Concursos<i class="material-icons right">arrow_drop_down</i></a></li>
                     <li><a class="navText" href="./programacion.html">Programación</a></li>
-                    <li><a class="navText" href="./noticias.php">Noticias</a></li>
-                    <li><a class="navText" href="./galeria.html">Galería</a></li>
+                    <li><a class="navText" href="./noticias.html">Noticias</a></li>
+                    <li><a class="navText" href="./juntaD.html">Galería</a></li>
 
                     <li><a class="navText" href="./contacto.html">Contacto</a></li>
                     <li><a class="waves-effect waves-light btn-large yellow-fest" href="./inscripcion.html">Inscríbete</a></li>
@@ -67,8 +85,8 @@
 
         </li>
         <li><a href="./programacion.html">Programación</a></li>
-        <li><a href="./noticias.php">Noticias</a></li>
-        <li><a href="./galeria.html">Galería</a></li>
+        <li><a href="#!">Noticias</a></li>
+        <li><a href="#!">Galería</a></li>
         <li><a href="./contacto.html">Contáctenos</a></li>
         <li><a href="./inscripcion.html">Inscríbete</a></li>
         <li>
@@ -92,78 +110,63 @@
     </ul>
 
     <!-- Content -->
+
+<div class="fixed-action-btn">
+		<a class="btn-floating btn-large red" href="https://gator3185.hostgator.com:2096/" target="_blank"> 
+		  <i class="large material-icons">mail</i>
+		</a>
+		
+	  </div>
+
     <div class="row">
-        <main class="col s12 m8 l9">
-            <img src="./img/junta d.png" height="100px" alt="" class="responsive-img programacion">
-            <div class="section">
-                <table class="highlight">
-                    <thead>
-                        <tr>
-                            <th>Nombre</th>
-                            <th>Cedula</th>
-                            <th>Cargo</th>
-                        </tr>
-                    </thead>
+        <div class="container">
+            <main class="col s12 m8 l9">
+                <img src="./img/NOTICIAS.png" height="100px" alt="" class="responsive-img programacion">
+                <div class="row ">
+                    <div class="col l12 m12 s12">
+                    <?
+				
+				while($row=mysqli_fetch_array($resultado)){
 
-                    <tbody>
-                        <tr>
-                            <td>CARLOS MARIO MENDOZA ALVAREZ</td>
-                            <td>79.790.584 </td>
-                            <td>PRESIDENTE</td>
-                        </tr>
-                        <tr>
-                            <td>MANUEL FRACISCO DIAZ GONZALES</td>
-                            <td>78.673.468</td>
-                            <td>VICEPRESIDENTE</td>
-                        </tr>
-                        <tr>
-                            <td>ISRAEL AUGUSTO QUINTERO TREJO</td>
-                            <td>72.000.757</td>
-                            <td>TESORERO</td>
-                        </tr>
-                        <tr>
-                            <td>GENARO ALFONSO ROSA MERLANO</td>
-                            <td>6.816.243</td>
-                            <td>FISCAL</td>
-                        </tr>
-                        <tr>
-                            <td>GISELA MARGARITA MUÑOZ AVILEZ</td>
-                            <td>35.144.920</td>
-                            <td>SECRETARIA</td>
-                        </tr>
-                        <tr>
-                            <td>YANETH PATRICIA BETTIN LOPEZ</td>
-                            <td>25.913.422</td>
-                            <td>VOCAL</td>
-                        </tr>
-                        <tr>
-                            <td>GRASE CAROLINA AVELEZ SIERRA</td>
-                            <td>45.526.529</td>
-                            <td>VOCAL</td>
-                        </tr>
-                        <tr>
-                            <td>EVELIO JOSE OCAMPO TORRES</td>
-                            <td>1.066.176.199</td>
-                            <td>VOCAL</td>
-                        </tr>
-                        <tr>
-                            <td>MARIO RAUL VASQUEZ ALVAREZ</td>
-                            <td>15.725.202</td>
-                            <td>VOCAL</td>
-                        </tr>
-                        <tr>
-                            <td>PAOLA ANDREA ALVAREZ ALVAREZ</td>
-                            <td>1.102.828.029</td>
-                            <td>REVISOR FISCAL</td>
-                        </tr>
+				
+				
+			echo "	<div class='col l12 m12 s12'>";
+			echo "  	<div class='card hoverable'>";
+			echo "			<div class='card-image noticia'>";
+			echo "				<img src='$row[imagen]' alt=''>";
+			echo "				<div class='card-content'>";
+			echo "					<h6> <b> $row[titulo] </b></h6>";
+            echo "					<p>$row[descripcion]</p>";
+             echo "                           <ul class='collapsible'>";
+             echo"                               <li>";
+               echo "                                 <div class='collapsible-header'><i class='material-icons'>expand_more</i></div>";
+                                              
+                  
+                                               
+                  echo "                              <div class='collapsible-body'>";
+                  echo "                                 <p>$row[noticia]</p>";
+                  echo "                              </div>";
+                  echo "                         </li>";
+                  echo "                      </ul>";
+            
+			echo "				</div>";
+							
+			echo "	</div>";
+			echo "		</div>";
+			echo "	</div>";
 
+			
+				}
+                ?>
+                  
+                 
+                 
+                 
 
+                </div>
 
-                    </tbody>
-                </table>
-            </div>
-
-        </main>
+            </main>
+        </div>
 
         <aside class="section">
             <!-- InstaWidget -->
@@ -191,6 +194,7 @@
     <div class="divider"></div>
 
     <footer class="page-footer white">
+
         <div class="row">
 
 
@@ -227,6 +231,7 @@
 
 
         </div>
+
         <div class="footer-copyright">
             <div class="container black-text">
                 © Copyright Text
@@ -248,7 +253,6 @@
             js.src = 'https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v3.1';
             fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));</script>
-
 
 </body>
 

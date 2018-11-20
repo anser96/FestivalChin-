@@ -22,4 +22,6 @@ $(function(){
   $('.modal').modal({
     dismissible: false
   });
+
+  $('input#descripcion, textarea#noticia').characterCounter();
 });
